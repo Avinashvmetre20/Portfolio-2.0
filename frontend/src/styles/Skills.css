@@ -1,0 +1,159 @@
+.skills-container {
+    padding: 40px;
+    text-align: center;
+    background: linear-gradient(135deg, #00c6ff, #0072ff); /* Light blue gradient */
+    color: white;
+    min-height: 80vh;
+    animation: fadeIn 1.5s ease;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  .skills-title {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #fff;
+  }
+  
+  .skill-form {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 30px;
+    border-radius: 12px;
+    max-width: 600px;
+    margin: 0 auto 40px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .skill-form:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.6);
+  }
+  
+  .skill-form input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background: #fff;
+    color: #333;
+    font-size: 16px;
+    outline: none;
+  }
+  
+  .skill-form button {
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    background: #0072ff;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .skill-form button:hover {
+    background: #005bb5;
+  }
+  
+  .skills-list {
+    display: grid;
+    grid-template-columns: 1fr; /* Stack one by one */
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .skill-card {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .skill-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.6);
+  }
+  
+  .skill-category {
+    font-size: 24px;
+    color: #fff;
+    margin-bottom: 10px;
+  }
+  
+  .skill-items {
+    font-size: 16px;
+    color: #dcdcdc;
+    margin-bottom: 10px;
+  }
+  
+  .skill-actions {
+    margin-top: 15px;
+  }
+  
+  .skill-actions button {
+    padding: 8px 16px;
+    font-size: 16px;
+    border: none;
+    background: #ff6347;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    margin: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .skill-actions button:hover {
+    background: #ff4500;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .skill-form {
+      padding: 20px;
+    }
+  
+    .skills-list {
+      grid-template-columns: 1fr; /* Stack cards one by one */
+    }
+  
+    .skill-category {
+      font-size: 22px;
+    }
+  
+    .skill-items {
+      font-size: 14px;
+    }
+  
+    .skill-actions button {
+      font-size: 14px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .skill-form {
+      padding: 15px;
+    }
+  
+    .skills-list {
+      grid-template-columns: 1fr; /* Stack cards one by one on mobile screens */
+    }
+  
+    .skill-category {
+      font-size: 18px;
+    }
+  
+    .skill-items {
+      font-size: 12px;
+    }
+  
+    .skill-actions button {
+      font-size: 14px;
+      padding: 6px 12px;
+    }
+  }
+  

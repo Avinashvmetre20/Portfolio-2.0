@@ -1,0 +1,188 @@
+.contact-container {
+    padding: 40px;
+    text-align: center;
+    background: linear-gradient(135deg, #00c6ff, #0072ff); /* Consistent blue gradient */
+    color: white;
+    min-height: 80vh;
+    animation: fadeIn 1.5s ease;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  .contact-title {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #fff;
+  }
+  
+  .contact-form {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 30px;
+    border-radius: 12px;
+    max-width: 600px;
+    margin: 0 auto 40px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .contact-form:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.6);
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background: #fff;
+    color: #333;
+    font-size: 16px;
+    outline: none;
+  }
+  
+  .contact-form button {
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    background: #0072ff;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .contact-form button:hover {
+    background: #005bb5;
+  }
+  
+  .details-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    background: #ff6347;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .details-button:hover {
+    background: #ff4500;
+  }
+  
+  .contact-details {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 8px;
+    max-width: 400px;
+    margin: 20px auto;
+  }
+  
+  .contact-details p {
+    font-size: 16px;
+    color: #fff;
+  }
+  
+  .messages-list {
+    margin-top: 40px;
+  }
+  
+  .message-card {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.4);
+    margin-bottom: 15px;
+  }
+  
+  .message-card p {
+    font-size: 16px;
+    color: #dcdcdc;
+    margin-bottom: 10px;
+  }
+  
+  .message-card button {
+    padding: 8px 16px;
+    font-size: 16px;
+    border: none;
+    background: #ff6347;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .message-card button:hover {
+    background: #ff4500;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .contact-form {
+      padding: 20px;
+    }
+  
+    .contact-details {
+      max-width: 100%;
+      margin: 0 auto;
+    }
+  
+    .contact-form input,
+    .contact-form textarea {
+      font-size: 14px;
+    }
+  
+    .contact-form button {
+      font-size: 16px;
+    }
+  
+    .message-card p {
+      font-size: 14px;
+    }
+  
+    .message-card button {
+      font-size: 14px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .contact-form {
+      padding: 15px;
+    }
+  
+    .contact-details {
+      max-width: 100%;
+    }
+  
+    .contact-form input,
+    .contact-form textarea {
+      font-size: 14px;
+    }
+  
+    .contact-form button {
+      font-size: 14px;
+    }
+  
+    .details-button {
+      font-size: 14px;
+      padding: 6px 12px;
+    }
+  
+    .message-card p {
+      font-size: 12px;
+    }
+  
+    .message-card button {
+      font-size: 14px;
+      padding: 6px 12px;
+    }
+  }
+  
