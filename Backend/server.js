@@ -21,6 +21,9 @@ app.use(express.json());
 app.use('/uploads', express.static('uploads'));
 
 // Routes
+app.get('/', (req, res) => {
+    res.send('Hello World!')
+  })
 app.use('/api', aboutRoutes);
 app.use('/api/auth', authRoutes);
 app.use('/api', projectRoutes);
